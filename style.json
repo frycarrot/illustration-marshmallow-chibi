@@ -1,0 +1,360 @@
+{
+  "skill": "illustration-marshmallow-chibi",
+  "name": "Marshmallow chibi",
+  "blurb": "Big-headed, tiny-bodied belly-up animals from above, marshmallow-plump shapes, grainy soft-focus edges, crisp thick ink, dopamine candy colours",
+  "mechanism": "Silhouettes are simple ellipses and round strokes grouped under the fleece filter, so they merge into one grainy plush form; interior patches use the mid filter; eyes, mouth, whiskers and toe beans are unfiltered ink on top. Top-down full-bleed ground, hard stars with soft glows, one white grain layer over the card.",
+  "canvas": {
+    "viewBox": "0 0 480 360",
+    "square_sticker_viewBox": "0 0 360 360"
+  },
+  "filters": {
+    "fleece": {
+      "applies_to": "animal silhouette",
+      "dilate": 2.2,
+      "fringe_blur": 6.6,
+      "surface_blur": 5.3,
+      "noise_frequency": [
+        0.34,
+        0.54
+      ],
+      "octaves": 2,
+      "seed": 17,
+      "fringe_displacement": 30,
+      "surface_displacement": 18,
+      "merge_order": [
+        "fringe",
+        "surface"
+      ],
+      "region": "-50% / 200%"
+    },
+    "soft": {
+      "blur": 3.6,
+      "noise_frequency": 1.2,
+      "displacement": 13,
+      "region": "-40% / 180%",
+      "applies_to": "scene objects such as clover, lily pads and pillows"
+    },
+    "mid": {
+      "blur": 1.8,
+      "noise_frequency": 1.2,
+      "displacement": 6
+    },
+    "haze": {
+      "blur": 12
+    },
+    "glow": {
+      "blur": 5
+    },
+    "grain": {
+      "frequency": 0.85,
+      "opacity": 0.22,
+      "colour": "white"
+    }
+  },
+  "frame": {
+    "origin": "head centre (0,0), tail toward +y",
+    "head": {
+      "cx": 0,
+      "cy": 0,
+      "rx": 54,
+      "ry": 42
+    },
+    "body": {
+      "cx": 0,
+      "cy": 56,
+      "rx": 24,
+      "ry": 24
+    },
+    "belly": {
+      "cx": 0,
+      "cy": 60,
+      "rx": 13,
+      "ry": 15
+    },
+    "chin_shade": {
+      "cx": 0,
+      "cy": 40,
+      "rx": 24,
+      "ry": 5,
+      "opacity": 0.55
+    },
+    "hind_leg": {
+      "path": "M10 68 L20 80",
+      "width": 21,
+      "paw": [
+        21,
+        82,
+        11.5
+      ]
+    },
+    "arm_up": {
+      "path": "M14 46 L28 38",
+      "width": 19,
+      "paw": [
+        30,
+        36,
+        10.5
+      ]
+    },
+    "arm_out": {
+      "path": "M16 50 L30 54",
+      "width": 19,
+      "paw": [
+        32,
+        55,
+        10.5
+      ]
+    },
+    "tuck_paw": [
+      9,
+      44,
+      8
+    ],
+    "hug_paw": [
+      14,
+      46,
+      7.5
+    ],
+    "hold_centre": [
+      0,
+      48
+    ],
+    "tail_curl": {
+      "path": "M10 74 C18 92 36 92 40 80",
+      "width": 12
+    },
+    "marshmallow_rule": "no thin parts and no sharp tips: limbs about as long as wide, ears round-tipped and puffed with a round-joined stroke"
+  },
+  "face": {
+    "eye": {
+      "cx": 30,
+      "cy": 2,
+      "rx": 4.6,
+      "ry": 6.2,
+      "colour": "#2E2628",
+      "highlight": false
+    },
+    "eye_spacing_of_head_width": 0.56,
+    "mouth_w": "M-9 7 Q-4.5 15 0 8.5 Q4.5 15 9 7",
+    "whiskers_right": "M42 6 L76 -1 M43 12 L80 12 M42 18 L75 25",
+    "ink_stroke": {
+      "mouth_whiskers": 2.4,
+      "line_eyes": 2.8,
+      "min": 2
+    },
+    "blush": {
+      "cx": 38,
+      "cy": 15,
+      "rx": 8,
+      "ry": 4.5,
+      "colour": "#FF8FB8",
+      "opacity": 0.55
+    },
+    "toe_bean": "ellipse (px, py+1.9) rx 3.5 ry 2.9 + circles r 1.6 at (px-4.2,py-2.3) (px,py-4.2) (px+4.2,py-2.3), #FF7FAA"
+  },
+  "eyes": [
+    "open",
+    "closed",
+    "happy",
+    "squeeze"
+  ],
+  "mouths": [
+    "w",
+    "open",
+    "line",
+    "o"
+  ],
+  "arms": [
+    "up",
+    "out",
+    "tuck",
+    "hug"
+  ],
+  "ears": {
+    "point": "M8 -34 C12 -52 26 -64 39 -61 C51 -58 54 -38 50 -14 Z (stroke 10, round join)",
+    "long": "M8 -32 C0 -64 8 -92 26 -94 C44 -96 48 -66 38 -28 Z (stroke 6)",
+    "round": "circle (36,-48) r 16",
+    "floppy": "M28 -38 C52 -44 70 -26 68 2 C66 22 52 26 44 16 C38 2 42 -18 24 -26 Z"
+  },
+  "tails": [
+    "curl",
+    "puff",
+    "nub",
+    "none"
+  ],
+  "belly_up_cues": [
+    "toe beans facing up",
+    "hind legs splayed",
+    "body rotated in frame"
+  ],
+  "colour_rules": {
+    "style": "dopamine candy: bright, clean, pure hues mixed with white",
+    "shades": "deeper, more saturated version of the same hue; never toward grey or brown",
+    "avoid": [
+      "grey mid-tones",
+      "beige",
+      "khaki",
+      "olive",
+      "brown",
+      "dusty vintage tones",
+      "#000000"
+    ],
+    "deep_fur_max_per_card": 1,
+    "grain": "white, opacity 0.22",
+    "ink": "#2E2628",
+    "contrast": "animal and ground in different hue families"
+  },
+  "fur": {
+    "strawberry": [
+      "#FFD9E8",
+      "#FFB0D0",
+      "#F786B6",
+      "#FFF2F8",
+      "#FF7FAE"
+    ],
+    "soda": [
+      "#D6F6FF",
+      "#A6E6FA",
+      "#72CDEF",
+      "#F2FCFF",
+      "#FF9EC4"
+    ],
+    "lemon": [
+      "#FFF9CC",
+      "#FFEC85",
+      "#FAD54F",
+      "#FFFDEB",
+      "#FFA3BC"
+    ],
+    "lime": [
+      "#F1FBC2",
+      "#DCF285",
+      "#BCE152",
+      "#FBFFE8",
+      "#FF9EC0"
+    ],
+    "grape": [
+      "#EEE2FF",
+      "#D4BDFC",
+      "#B394F4",
+      "#F9F4FF",
+      "#FF9ED0"
+    ],
+    "mint": [
+      "#D8FBEE",
+      "#A8F0D6",
+      "#74DDBB",
+      "#F2FFFA",
+      "#FF9EB8"
+    ],
+    "peach": [
+      "#FFE6D2",
+      "#FFC8A0",
+      "#FFA577",
+      "#FFF6EE",
+      "#FF8F9A"
+    ],
+    "caramel": [
+      "#FFE2C0",
+      "#FFC98E",
+      "#F5A862",
+      "#FFF6E8",
+      "#FF9494"
+    ],
+    "milk": [
+      "#FFFFFF",
+      "#FFF9F4",
+      "#FBDDEB",
+      "#FFFFFF",
+      "#FFAACB"
+    ],
+    "berry": [
+      "#B8A6EC",
+      "#9480DA",
+      "#7461C2",
+      "#E9E1FF",
+      "#FFA5D2"
+    ],
+    "_order": "light, base, shade, belly, inner ear"
+  },
+  "grounds": {
+    "water": [
+      "#BDF3F8",
+      "#8FE3F1",
+      "#63CFE7"
+    ],
+    "grass": [
+      "#EEFCAE",
+      "#D6F27A",
+      "#BCE357"
+    ],
+    "bed_sheet": [
+      "#FFE3F0",
+      "#FFD0E5"
+    ],
+    "rainbow_quilt": [
+      "#FFC4DD",
+      "#FFF2A8",
+      "#B9F5DF",
+      "#C2ECFF",
+      "#DCCBFF"
+    ],
+    "shadow": {
+      "water": "#3DB4D8",
+      "grass": "#86C232",
+      "bed": "#E46FAE"
+    }
+  },
+  "decor": {
+    "star": [
+      "#FFF7B8",
+      "#FFFFFF",
+      "#FFC4E2"
+    ],
+    "star_stroke": "0.35 R, round join",
+    "twinkle": "#FFFFFF",
+    "count": [
+      8,
+      14
+    ],
+    "size": [
+      4,
+      13
+    ]
+  },
+  "composition": {
+    "scale_by_count": {
+      "1": [
+        1.2,
+        1.4
+      ],
+      "2": [
+        0.95,
+        1.05
+      ],
+      "3": [
+        0.8,
+        0.88
+      ],
+      "4": [
+        0.65,
+        0.75
+      ]
+    },
+    "spacing_by_count": {
+      "2": 185,
+      "3": 145
+    },
+    "rotation": [
+      -25,
+      25
+    ],
+    "animal_footprint": "160 x 160 x S",
+    "calm_ground_min": 0.35
+  },
+  "gallery": [
+    "pond-float.svg",
+    "clover-nap.svg",
+    "rainbow-quilt.svg"
+  ]
+}
