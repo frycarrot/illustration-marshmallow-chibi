@@ -112,7 +112,7 @@ export function animal(p, o) {
     `<ellipse cx="0" cy="60" rx="13" ry="15" fill="${c.belly}"/>`,
     o.marks || '',
     ears[1] ? mirror(`<path d="${ears[1]}" fill="${c.ear}"/>`) : '',
-    mirror(`<ellipse cx="38" cy="15" rx="8" ry="4.5" fill="${BLUSH}" opacity=".55"/>`),
+    mirror(`<ellipse cx="38" cy="15" rx="8" ry="4.5" fill="${o.blush ?? BLUSH}" opacity=".55"/>`),
   ].join('');
 
   // INK: toe beans, eyes, mouth, whiskers — all thick, round-capped, no highlights
@@ -130,12 +130,12 @@ export function animal(p, o) {
   const MOUTHS = {
     w: '<path d="M-9 7 Q-4.5 15 0 8.5 Q4.5 15 9 7"/>',
     line: '<path d="M-5 10 Q0 13 5 10"/>',
-    open: `<path d="M-9 7 Q-4.5 15 0 8.5 Q4.5 15 9 7"/><path d="M-4.5 11.5 Q0 19 4.5 11.5" fill="#E69A9C" stroke-width="2"/>`,
+    open: `<path d="M-9 7 Q-4.5 15 0 8.5 Q4.5 15 9 7"/><path d="M-4.5 11.5 Q0 19 4.5 11.5" fill="${o.tongue ?? '#E69A9C'}" stroke-width="2"/>`,
     o: `<ellipse cx="0" cy="12" rx="3.2" ry="3.8" fill="${ink}" stroke="none"/>`,
   };
   const whisk = o.whiskers === false ? '' : mirror('<path d="M42 6 L76 -1 M43 12 L80 12 M42 18 L75 25"/>');
   const ink$ = [
-    `<g fill="${PAD}">${beanAt.map(bean).join('')}</g>`,
+    `<g fill="${o.pad ?? PAD}">${beanAt.map(bean).join('')}</g>`,
     EYES[eyes] || EYES.open,
     `<g fill="none" stroke="${ink}" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">${MOUTHS[o.mouth || 'w']}${whisk}</g>`,
     o.front || '',
