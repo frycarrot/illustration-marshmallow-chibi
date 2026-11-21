@@ -61,14 +61,21 @@ const out = (name, svg) => { fs.writeFileSync(path.join(here, '..', 'examples', 
 {
   const p = 'sq-';
   const hem = 'M-10 196 Q240 176 490 196 L490 370 L-10 370 Z';
-  const extra = F.linear(`${p}sheet`, ['#FFF4F8', '#FBDCEB'], [0, 0, 0, 1]) + `<clipPath id="${p}quilt"><path d="${hem}"/></clipPath>`;
+  const extra = F.linear(`${p}sheet`, ['#FFF4F8', '#FBDCEB'], [0, 0, 0, 1])
+    + F.radial(`${p}linen`, ['#FFFFFF', '#FFFEFF', '#F4E3EE'], { cx: .46, cy: .38, r: .75 })
+    + `<clipPath id="${p}quilt"><path d="${hem}"/></clipPath>`;
+  // Pull each corner out beyond the neck of the pillow so it survives the soft filter.
+  const pillowShape = 'M-83 -40 C-94 -42 -105 -54 -111 -47 C-117 -40 -105 -26 -106 -19 C-111 -4 -111 12 -106 24 C-104 31 -114 44 -109 50 C-104 56 -90 47 -82 44 C-39 48 37 49 81 43 C90 41 104 55 111 48 C117 41 106 28 107 20 C111 4 111 -11 106 -22 C104 -29 116 -43 110 -50 C104 -56 90 -45 82 -41 C37 -45 -36 -45 -83 -40Z';
+  const pillow = `<g transform="translate(235 84) rotate(-3)">
+    <path d="${pillowShape}" transform="translate(1 5) scale(1.06 1.08)" fill="#DAAAC5" opacity=".76" filter="url(#${p}haze)"/>
+    <path d="${pillowShape}" fill="url(#${p}linen)" filter="url(#${p}soft)"/>
+  </g>`;
   const bands = ['#F6C9DD', '#FFEAAB', '#D7E9C3', '#C7E8FB', '#CBCFEA', '#F6C9DD'];
   const stripes = bands.map((c, i) => `<path d="M-10 ${190 + i * 32} Q240 ${170 + i * 32} 490 ${190 + i * 32} L490 ${226 + i * 32} Q240 ${206 + i * 32} -10 ${226 + i * 32} Z" fill="${c}"/>`).join('');
   const dots = Array.from({ length: 18 }, (_, i) => `<circle cx="${(i * 89) % 470 + 10}" cy="${200 + (i * 47) % 160}" r="3" />`).join('');
   const scene = `<rect width="480" height="360" fill="url(#${p}sheet)"/>
   <g fill="#FFFFFF" opacity=".7">${Array.from({ length: 12 }, (_, i) => `<circle cx="${(i * 83) % 460 + 12}" cy="${(i * 37) % 170 + 8}" r="3.5"/>`).join('')}</g>
-  <g filter="url(#${p}haze)" opacity=".45"><rect x="80" y="30" width="320" height="110" rx="50" fill="#E7BBD2"/></g>
-  <g filter="url(#${p}soft)"><rect x="96" y="22" width="288" height="100" rx="46" fill="#FFFFFF"/></g>
+  ${pillow}
   <g clip-path="url(#${p}quilt)">${stripes}<g fill="#FFFFFF" opacity=".75">${dots}</g></g>
   <path d="M-10 196 Q240 176 490 196" stroke="#FFFFFF" stroke-width="6" fill="none"/>
   <g filter="url(#${p}soft)"><path d="${F.starPath(400, 270, 52, 0.52)}" fill="#FFE39F" stroke="#FFE39F" stroke-width="18" stroke-linejoin="round"/></g>

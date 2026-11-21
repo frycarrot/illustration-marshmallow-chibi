@@ -162,7 +162,9 @@ The card **is** the surface — no horizon, no perspective. Fill it with a gradi
 |---|---|---|---|
 | Water | radial `#EFF9FC → #C7E8FB → #AFD8ED` | lime lily pads `#C0DDAF`, white light patches, a pink floating flower | reflected stars, twinkles |
 | Grass | radial `#FFFFF7 → #E7F3E2 → #C7E6E8` | three-heart clovers `#C0DDAF` | white / pink / lilac five-petal flowers with yellow centres, pale grass flicks `q2 -7 5 -10` (stroke 2.4) |
-| Bed | pink sheet `#FFF4F8 → #FBDCEB` | white pillow (big rounded rect), lemon star cushion | a rainbow-striped quilt (pink, lemon, mint, soda, lavender) with a curved hem and white dots |
+| Bed | pink sheet `#FFF4F8 → #FBDCEB` | plump white pillow with four softly pinched cloth corners and gently bowed sides, lemon star cushion | a rainbow-striped quilt (pink, lemon, mint, soda, lavender) with a curved hem and white dots |
+
+Shape a bed pillow as one full, gently bowed form with four rounded corners that flare slightly past the sides. Make the corner pinches broad enough to survive the xx-soft filter. Feather the entire silhouette into the sheet and show the loft with a white centre and a faint blush shadow underneath.
 
 Others work the same way: a picnic blanket, a cloud, a pile of laundry, a tatami mat, a bath with bubbles.
 
