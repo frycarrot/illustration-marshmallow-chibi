@@ -71,7 +71,7 @@ export const EARS = {
 // ---------------------------------------------------------------- animal
 // Big head, tiny body. Local frame: head centre (0,0), head 108 wide, tail toward +y.
 // opts: x, y, s (scale), rot, fur (FUR key or ramp), ears, eyes, mouth, arms, tail,
-//       marks (MID-layer svg), hold (crisp item centred on the chest at (0,48), drawn over
+//       coatPatch (cat head-and-ear fur, SVG), marks (MID-layer svg), hold (crisp item centred on the chest at (0,48), drawn over
 //       the belly and under the MID-blurred hugging paws), front (extra ink), whiskers,
 //       shadow ('haze' | 'ripple' | 'none'), shadowColor, ink
 export function animal(p, o) {
@@ -95,14 +95,17 @@ export function animal(p, o) {
   const armOut = `${stroke('M16 50 L30 54', 19, c.fur)}<circle cx="32" cy="55" r="10.5" fill="${c.light}"/>`;
   const earSoft = ears[2] ? `<path d="${ears[0]}" fill="${c.fur}" stroke="${c.fur}" stroke-width="${ears[2]}" stroke-linejoin="round"/>` : `<path d="${ears[0]}" fill="${c.fur}"/>`;
   const earsFront = o.ears === 'floppy';
+  const head = `<ellipse cx="0" cy="0" rx="54" ry="42" fill="url(#${id})"/>`;
+  const coat = o.coatPatch ? `<defs><mask id="${id}-coat" mask-type="alpha">${mirror(earSoft)}${head}</mask></defs><g mask="url(#${id}-coat)">${o.coatPatch}</g>` : '';
   const soft = [
     tails[o.tail || 'curl'],
     mirror(leg),
     `<ellipse cx="0" cy="56" rx="24" ry="24" fill="url(#${id})"/>`,
     arms === 'up' ? mirror(armUp) : arms === 'out' ? mirror(armOut) : '',
     earsFront ? '' : mirror(earSoft),
-    `<ellipse cx="0" cy="0" rx="54" ry="42" fill="url(#${id})"/>`,
+    head,
     earsFront ? mirror(`<path d="${ears[0]}" fill="${c.shade}"/>`) : '',
+    coat,
   ].join('');
 
   // MID: chin shade, belly, markings, inner ears, blush, tucked paws

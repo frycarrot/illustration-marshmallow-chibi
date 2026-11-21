@@ -18,8 +18,8 @@ const out = (name, svg) => { fs.writeFileSync(path.join(here, '..', 'examples', 
   <g filter="url(#${p}mid)">${F.flower(64, 86, 15, '#FBDCEB', '#FFEAAB', 10)}</g>`;
   const animals = [
     F.animal(p, { name: 'a', x: 148, y: 132, s: 1.0, rot: -16, fur: 'strawberry', arms: 'up', eyes: 'open', mouth: 'open', shadow: 'ripple', shadowColor: '#A0C6DE' }),
-    F.animal(p, { name: 'b', x: 338, y: 160, s: 0.98, rot: 14, fur: 'grape', arms: 'tuck', eyes: 'closed', mouth: 'w', shadow: 'ripple', shadowColor: '#A0C6DE',
-      marks: `<path d="M-30 -30 Q0 -40 30 -30 Q20 -22 0 -24 Q-20 -22 -30 -30 Z" fill="#C8B2DA" opacity=".8"/>` }),
+    F.animal(p, { name: 'b', x: 338, y: 160, s: 0.98, rot: 14, fur: 'milk', arms: 'tuck', eyes: 'closed', mouth: 'w', shadow: 'ripple', shadowColor: '#A0C6DE',
+      coatPatch: `<path d="M-68 -76 H68 V10 C50 9 38 -1 25 -9 C12 -17 6 -28 1 -35 Q0 -37 -1 -34 C-8 -22 -14 -15 -27 -8 C-43 1 -50 9 -68 11 Z" fill="#BDA6D9"/>` }),
   ].join('');
   const decor = [
     F.star(p, 410, 120, 11), F.star(p, 86, 210, 9), F.star(p, 120, 40, 6), F.star(p, 360, 322, 8), F.star(p, 250, 330, 5),
@@ -82,7 +82,7 @@ const out = (name, svg) => { fs.writeFileSync(path.join(here, '..', 'examples', 
   <g filter="url(#${p}mid)"><path d="${F.starPath(400, 270, 30, 0.52)}" fill="#FFF2CB" stroke="#FFF2CB" stroke-width="10" stroke-linejoin="round"/></g>
   <g fill="none" stroke="#695580" stroke-width="2.6" stroke-linecap="round"><path d="M391 268 Q394 271 397 268 M403 268 Q406 271 409 268"/></g>`;
   const animals = F.animal(p, { name: 'a', x: 222, y: 120, s: 1.3, rot: -10, fur: 'berry', arms: 'up', eyes: 'closed', mouth: 'line', shadow: 'haze', shadowColor: '#D7ADCA',
-    ink: '#695580', marks: `<ellipse cx="-28" cy="-20" rx="16" ry="11" fill="#A999C8"/>`,
+    ink: '#695580', coatPatch: `<path d="M-68 -72 H-7 Q-4 -45 -14 -33 C-23 -22 -38 -22 -45 -11 Q-52 -1 -60 1 H-68Z" fill="#A391C4"/>`,
     front: `<g fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round"><path d="M66 -40 q8 -6 12 0 q-6 6 0 10 M84 -58 q5 -4 8 0 q-4 4 0 7"/></g>` });
   const decor = [F.star(p, 60, 60, 12), F.star(p, 432, 62, 9, '#FFFFFF'), F.star(p, 40, 300, 8, '#FFF1BE'), F.star(p, 300, 330, 6, '#FFFFFF', false),
     F.twinkle(110, 200, 6), F.twinkle(456, 160, 5), F.twinkle(24, 170, 4)].join('');

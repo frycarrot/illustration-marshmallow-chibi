@@ -77,8 +77,10 @@ chin shade  <ellipse cx="0" cy="40" rx="24" ry="5" fill=SHADE opacity=".55"/>
 belly       <ellipse cx="0" cy="60" rx="13" ry="15" fill=BELLY/>
 inner ear   cat: <path d="M20 -38 C24 -49 31 -54 37 -52 C43 -50 44 -41 42 -31 Z" fill=EAR/>
 blush       <ellipse cx="38" cy="15" rx="8" ry="4.5" fill="#F2B0C7" opacity=".55"/>
-markings    any ellipse or blob in a darker/lighter fur tone: a cap patch at (-26,-22), a spot on the body, a mask
+markings    interior spots, tabby stripes or muzzle markings in a lighter or darker fur tone
 ```
+
+**Cat coat patches that meet the outline.** Extend the patch past the head, trim it to the combined head-and-ears silhouette, then apply the shared fleece filter. Keep the pink inner ear in MID. For a side cap (Rainbow Quilt), carry the colour from one ear root along the outer cheek and taper it toward the temple. For a hachiware blaze (八割れ, Pond Float), colour both ears and the crown. Leave a cream-white point high between the ears that widens in two gentle curves toward the cheeks and joins the white muzzle.
 
 **INK layer** — sharp, **thick** and round-ended. Chunky lines give the blunt, dopey cuteness; thin lines look scratchy against the soft fur. Ink stroke widths: mouth and whiskers **2.4**, line eyes **2.8**, never below 2. Eyes are solid ovals with **no highlights**.
 
