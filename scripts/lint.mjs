@@ -38,16 +38,10 @@ const whisk = svg.indexOf('M42 6 L76 -1');
 if (whisk > 0) { const before = svg.slice(0, whisk); const open = (before.match(/<g[^>]*filter=/g) || []).length; const lastOpen = before.lastIndexOf('<g'); if (/filter=/.test(before.slice(lastOpen, before.indexOf('>', lastOpen)))) E('whiskers are inside a filtered group: ink must stay crisp'); }
 if (!/feTurbulence[^>]*baseFrequency="\.8|baseFrequency="0\.8/.test(svg)) W('no whole-card grain overlay found');
 
-// colour: rough chroma check on fills/strokes (background excluded: first rect)
+// Check grain and ink colours.
 const hexes = [...svg.matchAll(/(?:fill|stroke|stop-color)="(#[0-9a-fA-F]{6})"/g)].map((m) => m[1].toUpperCase());
-const chroma = (h) => { const n = parseInt(h.slice(1), 16); const c = [n >> 16 & 255, n >> 8 & 255, n & 255]; return Math.max(...c) - Math.min(...c); };
-const hsl = (h) => { const n = parseInt(h.slice(1), 16); const [r, g, b] = [n >> 16 & 255, n >> 8 & 255, n & 255].map((v) => v / 255);
-  const mx = Math.max(r, g, b), mn = Math.min(r, g, b), l = (mx + mn) / 2; const s = mx === mn ? 0 : (mx - mn) / (1 - Math.abs(2 * l - 1)); return [s, l]; };
-// dopamine rule: colours are clean — no greyish mid-tones (low saturation at mid lightness), ink excepted
-const muddy = [...new Set(hexes)].filter((h) => { const [s, l] = hsl(h); return l > 0.25 && l < 0.85 && s < 0.35 && h !== '#808080'; });
-if (muddy.length) W(`greyish / muddy colours: ${muddy.join(', ')} — mix hues with white, not grey or brown`);
 if (/filter="url\(#[^)]*grain\)"/.test(svg) && /fill="#808080"[^>]*grain|grain[^>]*fill="#808080"/.test(svg)) W('grey grain dulls the colours: use white grain');
-if (hexes.includes('#000000')) W('pure black: use ink #2E2628');
+if (hexes.includes('#000000')) W('pure black: use ink #695580');
 
 const kb = Buffer.byteLength(svg) / 1024;
 if (kb > 80) W(`file is ${kb.toFixed(1)} KB (target < 80 KB)`);

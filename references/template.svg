@@ -30,56 +30,56 @@
     <feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" seed="11"/>
     <feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 -2.4 1.7"/>
   </filter>
-  <radialGradient id="xx-ground" cx=".5" cy=".45" r=".85"><stop offset="0" stop-color="#BDF3F8"/><stop offset=".5" stop-color="#8FE3F1"/><stop offset="1" stop-color="#63CFE7"/></radialGradient>
+  <radialGradient id="xx-ground" cx=".5" cy=".45" r=".85"><stop offset="0" stop-color="#EFF9FC"/><stop offset=".5" stop-color="#C7E8FB"/><stop offset="1" stop-color="#AFD8ED"/></radialGradient>
   <!-- fur ramp: light / base / shade (strawberry) -->
-  <radialGradient id="xx-fur" cx=".42" cy=".36" r=".72"><stop offset="0" stop-color="#FFD9E8"/><stop offset=".55" stop-color="#FFB0D0"/><stop offset="1" stop-color="#F786B6"/></radialGradient>
+  <radialGradient id="xx-fur" cx=".42" cy=".36" r=".72"><stop offset="0" stop-color="#FFEBF3"/><stop offset=".55" stop-color="#F6C9DD"/><stop offset="1" stop-color="#E7AFCB"/></radialGradient>
 </defs>
 
 <!-- 1. GROUND: the whole card is the surface seen from above (here: pond water) -->
-<rect width="480" height="360" fill="#8FE3F1"/>
+<rect width="480" height="360" fill="#C7E8FB"/>
 <rect width="480" height="360" fill="url(#xx-ground)"/>
-<g filter="url(#xx-haze)" opacity=".6"><ellipse cx="90" cy="300" rx="90" ry="40" fill="#E8FDFF"/></g>
-<g filter="url(#xx-soft)"><path transform="translate(70 90) rotate(20)" d="M0 0 L9 -34 A35 35 0 1 1 -9 -34 Z" fill="#C6EE6A"/></g>
+<g filter="url(#xx-haze)" opacity=".6"><ellipse cx="90" cy="300" rx="90" ry="40" fill="#F6F8F2"/></g>
+<g filter="url(#xx-soft)"><path transform="translate(70 90) rotate(20)" d="M0 0 L9 -34 A35 35 0 1 1 -9 -34 Z" fill="#C0DDAF"/></g>
 
 <!-- 2. ANIMAL. Big head, tiny body. Local frame: head centre (0,0), head 108 wide, tail toward +y.
      Change only translate / rotate / scale on this wrapper. -->
 <g transform="translate(236 130) rotate(-12) scale(1.25)">
   <!-- under: ripple rings on water (or a haze shadow on land), tinted with a deeper ground colour -->
   <g fill="none" stroke="#FFFFFF" filter="url(#xx-mid)"><ellipse cx="0" cy="34" rx="80" ry="76" stroke-width="2.8" opacity=".75"/></g>
-  <ellipse cx="0" cy="40" rx="60" ry="58" fill="#3DB4D8" opacity=".35" filter="url(#xx-haze)"/>
+  <ellipse cx="0" cy="40" rx="60" ry="58" fill="#A0C6DE" opacity=".35" filter="url(#xx-haze)"/>
 
   <!-- SOFT layer: tail, stubby hind legs, body, stubby arms, puffy ears, head -->
   <g filter="url(#xx-fleece)">
-    <path d="M10 74 C18 92 36 92 40 80" stroke="#FFB0D0" stroke-width="12" stroke-linecap="round" fill="none"/>
-    <path d="M-10 68 L-20 80" stroke="#FFB0D0" stroke-width="21" stroke-linecap="round"/><circle cx="-21" cy="82" r="11.5" fill="#FFD9E8"/>
-    <path d="M10 68 L20 80" stroke="#FFB0D0" stroke-width="21" stroke-linecap="round"/><circle cx="21" cy="82" r="11.5" fill="#FFD9E8"/>
+    <path d="M10 74 C18 92 36 92 40 80" stroke="#F6C9DD" stroke-width="12" stroke-linecap="round" fill="none"/>
+    <path d="M-10 68 L-20 80" stroke="#F6C9DD" stroke-width="21" stroke-linecap="round"/><circle cx="-21" cy="82" r="11.5" fill="#FFEBF3"/>
+    <path d="M10 68 L20 80" stroke="#F6C9DD" stroke-width="21" stroke-linecap="round"/><circle cx="21" cy="82" r="11.5" fill="#FFEBF3"/>
     <ellipse cx="0" cy="56" rx="24" ry="24" fill="url(#xx-fur)"/>
-    <path d="M-14 46 L-28 38" stroke="#FFB0D0" stroke-width="19" stroke-linecap="round"/><circle cx="-30" cy="36" r="10.5" fill="#FFD9E8"/>
-    <path d="M14 46 L28 38" stroke="#FFB0D0" stroke-width="19" stroke-linecap="round"/><circle cx="30" cy="36" r="10.5" fill="#FFD9E8"/>
-    <path d="M-8 -34 C-12 -52 -26 -64 -39 -61 C-51 -58 -54 -38 -50 -14 Z" fill="#FFB0D0" stroke="#FFB0D0" stroke-width="10" stroke-linejoin="round"/>
-    <path d="M8 -34 C12 -52 26 -64 39 -61 C51 -58 54 -38 50 -14 Z" fill="#FFB0D0" stroke="#FFB0D0" stroke-width="10" stroke-linejoin="round"/>
+    <path d="M-14 46 L-28 38" stroke="#F6C9DD" stroke-width="19" stroke-linecap="round"/><circle cx="-30" cy="36" r="10.5" fill="#FFEBF3"/>
+    <path d="M14 46 L28 38" stroke="#F6C9DD" stroke-width="19" stroke-linecap="round"/><circle cx="30" cy="36" r="10.5" fill="#FFEBF3"/>
+    <path d="M-8 -34 C-12 -52 -26 -64 -39 -61 C-51 -58 -54 -38 -50 -14 Z" fill="#F6C9DD" stroke="#F6C9DD" stroke-width="10" stroke-linejoin="round"/>
+    <path d="M8 -34 C12 -52 26 -64 39 -61 C51 -58 54 -38 50 -14 Z" fill="#F6C9DD" stroke="#F6C9DD" stroke-width="10" stroke-linejoin="round"/>
     <ellipse cx="0" cy="0" rx="54" ry="42" fill="url(#xx-fur)"/>
   </g>
 
   <!-- MID layer: chin shade, belly, inner ears, blush -->
   <g filter="url(#xx-mid)">
-    <ellipse cx="0" cy="40" rx="24" ry="5" fill="#F786B6" opacity=".55"/>
-    <ellipse cx="0" cy="60" rx="13" ry="15" fill="#FFF2F8"/>
-    <path d="M-20 -38 C-24 -49 -31 -54 -37 -52 C-43 -50 -44 -41 -42 -31 Z" fill="#FF7FAE"/>
-    <path d="M20 -38 C24 -49 31 -54 37 -52 C43 -50 44 -41 42 -31 Z" fill="#FF7FAE"/>
-    <ellipse cx="-38" cy="15" rx="8" ry="4.5" fill="#FF8FB8" opacity=".55"/>
-    <ellipse cx="38" cy="15" rx="8" ry="4.5" fill="#FF8FB8" opacity=".55"/>
+    <ellipse cx="0" cy="40" rx="24" ry="5" fill="#E7AFCB" opacity=".55"/>
+    <ellipse cx="0" cy="60" rx="13" ry="15" fill="#FFF6F8"/>
+    <path d="M-20 -38 C-24 -49 -31 -54 -37 -52 C-43 -50 -44 -41 -42 -31 Z" fill="#EFAECA"/>
+    <path d="M20 -38 C24 -49 31 -54 37 -52 C43 -50 44 -41 42 -31 Z" fill="#EFAECA"/>
+    <ellipse cx="-38" cy="15" rx="8" ry="4.5" fill="#F2B0C7" opacity=".55"/>
+    <ellipse cx="38" cy="15" rx="8" ry="4.5" fill="#F2B0C7" opacity=".55"/>
   </g>
 
   <!-- INK layer (no filter): toe beans, eyes (no highlights), mouth, whiskers — thick, round caps -->
-  <g fill="#FF7FAA">
+  <g fill="#DDA1BE">
     <ellipse cx="-21" cy="83.9" rx="3.5" ry="2.9"/><circle cx="-25.2" cy="79.7" r="1.6"/><circle cx="-21" cy="77.8" r="1.6"/><circle cx="-16.8" cy="79.7" r="1.6"/>
     <ellipse cx="21" cy="83.9" rx="3.5" ry="2.9"/><circle cx="16.8" cy="79.7" r="1.6"/><circle cx="21" cy="77.8" r="1.6"/><circle cx="25.2" cy="79.7" r="1.6"/>
     <ellipse cx="-30" cy="37.9" rx="3.5" ry="2.9"/><circle cx="-34.2" cy="33.7" r="1.6"/><circle cx="-30" cy="31.8" r="1.6"/><circle cx="-25.8" cy="33.7" r="1.6"/>
     <ellipse cx="30" cy="37.9" rx="3.5" ry="2.9"/><circle cx="25.8" cy="33.7" r="1.6"/><circle cx="30" cy="31.8" r="1.6"/><circle cx="34.2" cy="33.7" r="1.6"/>
   </g>
-  <g fill="#2E2628"><ellipse cx="-30" cy="2" rx="4.6" ry="6.2"/><ellipse cx="30" cy="2" rx="4.6" ry="6.2"/></g>
-  <g fill="none" stroke="#2E2628" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+  <g fill="#695580"><ellipse cx="-30" cy="2" rx="4.6" ry="6.2"/><ellipse cx="30" cy="2" rx="4.6" ry="6.2"/></g>
+  <g fill="none" stroke="#695580" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
     <path d="M-9 7 Q-4.5 15 0 8.5 Q4.5 15 9 7"/>
     <path d="M42 6 L76 -1 M43 12 L80 12 M42 18 L75 25"/>
     <path d="M-42 6 L-76 -1 M-43 12 L-80 12 M-42 18 L-75 25"/>
@@ -87,9 +87,9 @@
 </g>
 
 <!-- 3. DECOR: hard-edged stars, some with a soft glow behind -->
-<circle cx="400" cy="80" r="14" fill="#FFF7B8" opacity=".85" filter="url(#xx-glow)"/>
-<path d="M400 69 L403.8 75.8 L411.5 77.3 L406.2 83.1 L407.1 90.9 L400 87.6 L392.9 90.9 L393.8 83.1 L388.5 77.3 L396.2 75.8 Z" fill="#FFF7B8" stroke="#FFF7B8" stroke-width="3.8" stroke-linejoin="round"/>
-<path d="M90 214 L92.4 218.3 L97.2 219.2 L93.9 222.8 L94.4 227.7 L90 225.6 L85.6 227.7 L86.1 222.8 L82.8 219.2 L87.6 218.3 Z" fill="#FFF7B8" stroke="#FFF7B8" stroke-width="2.6" stroke-linejoin="round"/>
+<circle cx="400" cy="80" r="14" fill="#FFF1BE" opacity=".85" filter="url(#xx-glow)"/>
+<path d="M400 69 L403.8 75.8 L411.5 77.3 L406.2 83.1 L407.1 90.9 L400 87.6 L392.9 90.9 L393.8 83.1 L388.5 77.3 L396.2 75.8 Z" fill="#FFF1BE" stroke="#FFF1BE" stroke-width="3.8" stroke-linejoin="round"/>
+<path d="M90 214 L92.4 218.3 L97.2 219.2 L93.9 222.8 L94.4 227.7 L90 225.6 L85.6 227.7 L86.1 222.8 L82.8 219.2 L87.6 218.3 Z" fill="#FFF1BE" stroke="#FFF1BE" stroke-width="2.6" stroke-linejoin="round"/>
 <path d="M420 250 Q421 249 426 250 Q421 251 420 256 Q419 251 414 250 Q419 249 420 244 Z" fill="#FFFFFF"/>
 
 <!-- 4. GRAIN over everything -->

@@ -11,12 +11,12 @@ Use `SKILL.md` for the frame, colours and layers. Look at the rendered card at d
 | Spacing | Whiskers and raised paws stay clear of other faces. ~35% of the card is calm ground. |
 | Scene | The top-down surface reads with the animals hidden: ripples and pads = water, clovers and flowers = grass, pillow and quilt = bed. |
 | Decoration | Stars mix glow and hard points, sit in open space, and stay off faces. |
-| Colour | Bright clean dopamine candy; no greys, beiges or browns; shades and shadows stay in hue; white grain. |
+| Colour | Petal pink, sky blue and star yellow on pale grounds, with grape ink and natural markings on calicos. |
 
 ## Common fixes
 
 - **Animal vanishes into the background** → put it on a different hue family (pink on aqua, milk on lime); the blur cannot add contrast.
-- **Colours look dirty** → remove grey/beige/brown, tint shadows with a deeper ground hue, use white grain.
+- **Colours look dirty** → restore the local pink, blue or yellow and tint shadows with the ground hue, use white grain.
 - **Looks like it's standing** → raise the arms (`up`/`out`), show beans on all four paws, add 10–20° rotation and a full haze or ripple ring around it.
 - **Looks thin or scratchy** → thicken mouth/whiskers to 2.4, line eyes to 2.8.
 - **Face looks blurry** → an ink element ended up inside a filtered `<g>`; move it out.

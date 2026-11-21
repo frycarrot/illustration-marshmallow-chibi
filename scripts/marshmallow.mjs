@@ -45,18 +45,18 @@ export const linear = (id, stops, [x1, y1, x2, y2] = [0, 0, 0, 1]) =>
 // ---------------------------------------------------------------- palette
 export const FUR = {
   // light / base / shade / belly / inner ear — every ramp stays in its own hue (no grey, no brown)
-  strawberry: { light: '#FFD9E8', fur: '#FFB0D0', shade: '#F786B6', belly: '#FFF2F8', ear: '#FF7FAE' },
-  soda:       { light: '#D6F6FF', fur: '#A6E6FA', shade: '#72CDEF', belly: '#F2FCFF', ear: '#FF9EC4' },
-  lemon:      { light: '#FFF9CC', fur: '#FFEC85', shade: '#FAD54F', belly: '#FFFDEB', ear: '#FFA3BC' },
-  lime:       { light: '#F1FBC2', fur: '#DCF285', shade: '#BCE152', belly: '#FBFFE8', ear: '#FF9EC0' },
-  grape:      { light: '#EEE2FF', fur: '#D4BDFC', shade: '#B394F4', belly: '#F9F4FF', ear: '#FF9ED0' },
-  mint:       { light: '#D8FBEE', fur: '#A8F0D6', shade: '#74DDBB', belly: '#F2FFFA', ear: '#FF9EB8' },
-  peach:      { light: '#FFE6D2', fur: '#FFC8A0', shade: '#FFA577', belly: '#FFF6EE', ear: '#FF8F9A' },
-  caramel:    { light: '#FFE2C0', fur: '#FFC98E', shade: '#F5A862', belly: '#FFF6E8', ear: '#FF9494' },
-  milk:       { light: '#FFFFFF', fur: '#FFF9F4', shade: '#FBDDEB', belly: '#FFFFFF', ear: '#FFAACB' },
-  berry:      { light: '#B8A6EC', fur: '#9480DA', shade: '#7461C2', belly: '#E9E1FF', ear: '#FFA5D2' }, // the one deep fur
+  strawberry: { light: '#FFEBF3', fur: '#F6C9DD', shade: '#E7AFCB', belly: '#FFF6F8', ear: '#EFAECA' },
+  soda:       { light: '#EAF6FF', fur: '#C7E8FB', shade: '#A8CEE8', belly: '#F6FBFF', ear: '#F3C5D9' },
+  lemon:      { light: '#FFF6D6', fur: '#FFEAAB', shade: '#EDCB87', belly: '#FFFAE8', ear: '#F6C9DD' },
+  lime:       { light: '#EFF6DE', fur: '#D7E9C3', shade: '#BAD6A8', belly: '#FAFFF0', ear: '#F6C9DD' },
+  grape:      { light: '#F4EDF9', fur: '#E2CCE9', shade: '#C8B2DA', belly: '#FBF3FA', ear: '#F3C5D9' },
+  mint:       { light: '#ECFAF4', fur: '#C7E6DF', shade: '#A5D3C9', belly: '#F7FFFA', ear: '#F6C9DD' },
+  peach:      { light: '#FFF0E1', fur: '#FAD5BB', shade: '#EDBA9D', belly: '#FFF7EF', ear: '#F3BBCB' },
+  caramel:    { light: '#FFF4CF', fur: '#FFEAAB', shade: '#EBCB8E', belly: '#FFF7DD', ear: '#F2C2CF' },
+  milk:       { light: '#FFFFFF', fur: '#FFFBF3', shade: '#E5D9E4', belly: '#FFFFFF', ear: '#F6C9DD' },
+  berry:      { light: '#E7E3F6', fur: '#CBC2E6', shade: '#A999C8', belly: '#F4EFFA', ear: '#F3C6DD' }, // the one deep fur
 };
-export const INK = '#2E2628', PAD = '#FF7FAA', BLUSH = '#FF8FB8';
+export const INK = '#695580', PAD = '#DDA1BE', BLUSH = '#F2B0C7';
 
 // ---------------------------------------------------------------- species parts
 // Ears: [right-side shape, inner shape]; left side mirrors with scale(-1 1).
@@ -130,7 +130,7 @@ export function animal(p, o) {
   const MOUTHS = {
     w: '<path d="M-9 7 Q-4.5 15 0 8.5 Q4.5 15 9 7"/>',
     line: '<path d="M-5 10 Q0 13 5 10"/>',
-    open: `<path d="M-9 7 Q-4.5 15 0 8.5 Q4.5 15 9 7"/><path d="M-4.5 11.5 Q0 19 4.5 11.5" fill="${o.tongue ?? '#E69A9C'}" stroke-width="2"/>`,
+    open: `<path d="M-9 7 Q-4.5 15 0 8.5 Q4.5 15 9 7"/><path d="M-4.5 11.5 Q0 19 4.5 11.5" fill="${o.tongue ?? '#DF9BB4'}" stroke-width="2"/>`,
     o: `<ellipse cx="0" cy="12" rx="3.2" ry="3.8" fill="${ink}" stroke="none"/>`,
   };
   const whisk = o.whiskers === false ? '' : mirror('<path d="M42 6 L76 -1 M43 12 L80 12 M42 18 L75 25"/>');
@@ -168,7 +168,7 @@ export function starPath(x, y, r, inner = 0.45) {
   return `M${pts.join(' L')} Z`;
 }
 // Hard-edged star with an optional soft glow behind it.
-export const star = (p, x, y, r, col = '#FFF7B8', glow = true) =>
+export const star = (p, x, y, r, col = '#FFF1BE', glow = true) =>
   (glow ? `<circle cx="${x}" cy="${y}" r="${f(r * 1.3)}" fill="${col}" opacity=".85" filter="url(#${p}glow)"/>` : '') +
   `<path d="${starPath(x, y, r)}" fill="${col}" stroke="${col}" stroke-width="${f(r * 0.35)}" stroke-linejoin="round"/>`;
 // Four-point twinkle.

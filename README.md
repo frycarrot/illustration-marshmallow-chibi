@@ -4,7 +4,7 @@
 |:---:|:---:|:---:|
 | [![Pond Float](examples/pond-float.png)](examples/pond-float.svg) | [![Clover Nap](examples/clover-nap.png)](examples/clover-nap.svg) | [![Rainbow Quilt](examples/rainbow-quilt.png)](examples/rainbow-quilt.svg) |
 
-Big-headed, tiny-bodied animals napping on their backs, seen from above. **Silhouettes feather out into loose fibres; eyes, ω mouths, whiskers and toe beans stay crisp** — thick, round-ended lines, wide-set eyes with no highlights, a big ω mouth. The gallery uses milky pink, pale mint and buttercream colours, marshmallow-plump limbs and ears, hard stars with soft glows.
+Big-headed, tiny-bodied animals napping on their backs, seen from above. **Silhouettes feather out into loose fibres; eyes, ω mouths, whiskers and toe beans stay crisp** — thick, round-ended lines, wide-set eyes with no highlights, a big ω mouth. The gallery uses petal pink, sky blue and star yellow with grape-purple ink, marshmallow-plump limbs and ears, hard stars with soft glows.
 
 **In a chat window**, upload `SKILL.md` and describe the animals and where they're lying. Attach `references/template.svg` to start from a finished card.
 

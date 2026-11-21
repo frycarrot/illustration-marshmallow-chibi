@@ -1,7 +1,7 @@
 {
   "skill": "illustration-marshmallow-chibi",
   "name": "Marshmallow chibi",
-  "blurb": "Big-headed, tiny-bodied belly-up animals from above, marshmallow-plump shapes, grainy soft-focus edges, crisp thick ink, dopamine candy colours",
+  "blurb": "Big-headed, tiny-bodied belly-up animals from above, marshmallow-plump shapes, grainy soft-focus edges, crisp thick ink, star-pink pastel colours",
   "mechanism": "Silhouettes are simple ellipses and round strokes grouped under the fleece filter, so they merge into one grainy plush form; interior patches use the mid filter; eyes, mouth, whiskers and toe beans are unfiltered ink on top. Top-down full-bleed ground, hard stars with soft glows, one white grain layer over the card.",
   "canvas": {
     "viewBox": "0 0 480 360",
@@ -131,7 +131,7 @@
       "cy": 2,
       "rx": 4.6,
       "ry": 6.2,
-      "colour": "#2E2628",
+      "colour": "#695580",
       "highlight": false
     },
     "eye_spacing_of_head_width": 0.56,
@@ -147,10 +147,10 @@
       "cy": 15,
       "rx": 8,
       "ry": 4.5,
-      "colour": "#FF8FB8",
+      "colour": "#F2B0C7",
       "opacity": 0.55
     },
-    "toe_bean": "ellipse (px, py+1.9) rx 3.5 ry 2.9 + circles r 1.6 at (px-4.2,py-2.3) (px,py-4.2) (px+4.2,py-2.3), #FF7FAA"
+    "toe_bean": "ellipse (px, py+1.9) rx 3.5 ry 2.9 + circles r 1.6 at (px-4.2,py-2.3) (px,py-4.2) (px+4.2,py-2.3), #DDA1BE"
   },
   "eyes": [
     "open",
@@ -188,128 +188,128 @@
     "body rotated in frame"
   ],
   "colour_rules": {
-    "style": "dopamine candy: bright, clean, pure hues mixed with white",
-    "shades": "deeper, more saturated version of the same hue; never toward grey or brown",
+    "style": "Star pink, sky blue and pale star yellow on light grounds with grape-purple ink.",
+    "shades": "Soft same-hue shadows; the strongest pink is a small accent.",
     "avoid": [
-      "grey mid-tones",
-      "beige",
-      "khaki",
-      "olive",
-      "brown",
-      "dusty vintage tones",
-      "#000000"
+      "neon grounds",
+      "overall grey wash"
     ],
     "deep_fur_max_per_card": 1,
     "grain": "white, opacity 0.22",
-    "ink": "#2E2628",
-    "contrast": "animal and ground in different hue families"
+    "ink": "#695580",
+    "contrast": "animal and ground in different hue families",
+    "calico": [
+      "#FFFBF3",
+      "#EBA264",
+      "#524541"
+    ]
   },
   "fur": {
     "strawberry": [
-      "#FFD9E8",
-      "#FFB0D0",
-      "#F786B6",
-      "#FFF2F8",
-      "#FF7FAE"
+      "#FFEBF3",
+      "#F6C9DD",
+      "#E7AFCB",
+      "#FFF6F8",
+      "#EFAECA"
     ],
     "soda": [
-      "#D6F6FF",
-      "#A6E6FA",
-      "#72CDEF",
-      "#F2FCFF",
-      "#FF9EC4"
+      "#EAF6FF",
+      "#C7E8FB",
+      "#A8CEE8",
+      "#F6FBFF",
+      "#F3C5D9"
     ],
     "lemon": [
-      "#FFF9CC",
-      "#FFEC85",
-      "#FAD54F",
-      "#FFFDEB",
-      "#FFA3BC"
+      "#FFF6D6",
+      "#FFEAAB",
+      "#EDCB87",
+      "#FFFAE8",
+      "#F6C9DD"
     ],
     "lime": [
-      "#F1FBC2",
-      "#DCF285",
-      "#BCE152",
-      "#FBFFE8",
-      "#FF9EC0"
+      "#EFF6DE",
+      "#D7E9C3",
+      "#BAD6A8",
+      "#FAFFF0",
+      "#F6C9DD"
     ],
     "grape": [
-      "#EEE2FF",
-      "#D4BDFC",
-      "#B394F4",
-      "#F9F4FF",
-      "#FF9ED0"
+      "#F4EDF9",
+      "#E2CCE9",
+      "#C8B2DA",
+      "#FBF3FA",
+      "#F3C5D9"
     ],
     "mint": [
-      "#D8FBEE",
-      "#A8F0D6",
-      "#74DDBB",
-      "#F2FFFA",
-      "#FF9EB8"
+      "#ECFAF4",
+      "#C7E6DF",
+      "#A5D3C9",
+      "#F7FFFA",
+      "#F6C9DD"
     ],
     "peach": [
-      "#FFE6D2",
-      "#FFC8A0",
-      "#FFA577",
-      "#FFF6EE",
-      "#FF8F9A"
+      "#FFF0E1",
+      "#FAD5BB",
+      "#EDBA9D",
+      "#FFF7EF",
+      "#F3BBCB"
     ],
     "caramel": [
-      "#FFE2C0",
-      "#FFC98E",
-      "#F5A862",
-      "#FFF6E8",
-      "#FF9494"
+      "#FFF4CF",
+      "#FFEAAB",
+      "#EBCB8E",
+      "#FFF7DD",
+      "#F2C2CF"
     ],
     "milk": [
       "#FFFFFF",
-      "#FFF9F4",
-      "#FBDDEB",
+      "#FFFBF3",
+      "#E5D9E4",
       "#FFFFFF",
-      "#FFAACB"
+      "#F6C9DD"
     ],
     "berry": [
-      "#B8A6EC",
-      "#9480DA",
-      "#7461C2",
-      "#E9E1FF",
-      "#FFA5D2"
+      "#E7E3F6",
+      "#CBC2E6",
+      "#A999C8",
+      "#F4EFFA",
+      "#F3C6DD"
     ],
     "_order": "light, base, shade, belly, inner ear"
   },
   "grounds": {
     "water": [
-      "#BDF3F8",
-      "#8FE3F1",
-      "#63CFE7"
+      "#EFF9FC",
+      "#C7E8FB",
+      "#AFD8ED"
     ],
     "grass": [
-      "#EEFCAE",
-      "#D6F27A",
-      "#BCE357"
+      "#FFFFF7",
+      "#E7F3E2",
+      "#C7E6E8"
     ],
     "bed_sheet": [
-      "#FFE3F0",
-      "#FFD0E5"
+      "#FFF4F8",
+      "#FBDCEB"
     ],
     "rainbow_quilt": [
-      "#FFC4DD",
-      "#FFF2A8",
-      "#B9F5DF",
-      "#C2ECFF",
-      "#DCCBFF"
+      "#F6C9DD",
+      "#FFEAAB",
+      "#D7E9C3",
+      "#C7E8FB",
+      "#CBCFEA"
     ],
     "shadow": {
-      "water": "#3DB4D8",
-      "grass": "#86C232",
-      "bed": "#E46FAE"
+      "water": "#A0C6DE",
+      "grass": "#A3C8CC",
+      "bed": "#D7ADCA"
     }
   },
   "decor": {
     "star": [
-      "#FFF7B8",
+      "#FFF1BE",
       "#FFFFFF",
-      "#FFC4E2"
+      "#FBDCEB"
     ],
     "star_stroke": "0.35 R, round join",
     "twinkle": "#FFFFFF",

@@ -1,11 +1,11 @@
 ---
 name: illustration-marshmallow-chibi
-description: Draw original belly-up chibi animals as self-contained SVG cards with grainy, soft-focus edges and crisp ink faces, seen from above on water, grass or a bed. Use for bright dopamine-colour animal scenes, cosy wallpapers, stickers, greeting cards and spot illustrations.
+description: Draw original belly-up chibi animals as self-contained SVG cards with grainy, soft-focus edges and crisp ink faces, seen from above on water, grass or a bed. Use for pastel animal scenes, cosy wallpapers, stickers, greeting cards and spot illustrations.
 ---
 
 # Marshmallow chibi
 
-Small round animals lie on their backs, seen from straight above. Their **silhouettes feather out into loose, fleecy fibres**, while the **eyes, mouth, whiskers and toe beans stay sharp**. Colours are bright, clean dopamine candy. Every shape is plump and round like a marshmallow — no thin parts, no sharp tips. Decoration mixes **hard-edged stars with soft glows**.
+Small round animals lie on their backs, seen from straight above. Their **silhouettes feather out into loose, fleecy fibres**, while the **eyes, mouth, whiskers and toe beans stay sharp**. Colours are light star-pink pastels. Every shape is plump and round like a marshmallow — no thin parts, no sharp tips. Decoration mixes **hard-edged stars with soft glows**.
 
 The blur does most of the work: simple ellipses and thick round strokes merge into one plush form, so the shapes below never need to be precise. Precision goes into the few crisp ink marks.
 
@@ -76,17 +76,17 @@ head        <ellipse cx="0" cy="0" rx="54" ry="42" fill=FUR-GRADIENT/>
 chin shade  <ellipse cx="0" cy="40" rx="24" ry="5" fill=SHADE opacity=".55"/>
 belly       <ellipse cx="0" cy="60" rx="13" ry="15" fill=BELLY/>
 inner ear   cat: <path d="M20 -38 C24 -49 31 -54 37 -52 C43 -50 44 -41 42 -31 Z" fill=EAR/>
-blush       <ellipse cx="38" cy="15" rx="8" ry="4.5" fill="#FF8FB8" opacity=".55"/>
+blush       <ellipse cx="38" cy="15" rx="8" ry="4.5" fill="#F2B0C7" opacity=".55"/>
 markings    any ellipse or blob in a darker/lighter fur tone: a cap patch at (-26,-22), a spot on the body, a mask
 ```
 
 **INK layer** — sharp, **thick** and round-ended. Chunky lines give the blunt, dopey cuteness; thin lines look scratchy against the soft fur. Ink stroke widths: mouth and whiskers **2.4**, line eyes **2.8**, never below 2. Eyes are solid ovals with **no highlights**.
 
 ```
-eyes        <ellipse cx="±30" cy="2" rx="4.6" ry="6.2" fill="#2E2628"/>      solid, no highlight, set far apart
-mouth (ω)   <path d="M-9 7 Q-4.5 15 0 8.5 Q4.5 15 9 7" stroke="#2E2628" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+eyes        <ellipse cx="±30" cy="2" rx="4.6" ry="6.2" fill="#695580"/>      solid, no highlight, set far apart
+mouth (ω)   <path d="M-9 7 Q-4.5 15 0 8.5 Q4.5 15 9 7" stroke="#695580" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
 whiskers    <path d="M42 6 L76 -1 M43 12 L80 12 M42 18 L75 25"/>  same stroke; mirror for the left
-toe beans   on every upturned paw at (px,py): <ellipse cx=px cy=py+1.9 rx="3.5" ry="2.9"/> + three <circle r="1.6"/> at (px-4.2,py-2.3) (px,py-4.2) (px+4.2,py-2.3), fill "#FF7FAA"
+toe beans   on every upturned paw at (px,py): <ellipse cx=px cy=py+1.9 rx="3.5" ry="2.9"/> + three <circle r="1.6"/> at (px-4.2,py-2.3) (px,py-4.2) (px+4.2,py-2.3), fill "#DDA1BE"
 ```
 
 Face proportions: the head is wider than tall (108 × 84). The eyes sit on the horizontal centre line, **60 apart (55% of head width)** — wide-set eyes make the animal look a little dim and sweet. The ω mouth is big, **18 wide**, just below the eye line in the middle of the gap. Three whiskers per side start near the cheek edge (x ≈ 42) and reach well past the head. Blush sits under and slightly outside each eye.
@@ -103,7 +103,7 @@ Face proportions: the head is wider than tall (108 × 84). The eyes sit on the h
 | Mouth | Build (stroke 2.4) |
 |---|---|
 | `w` (default ω) | above |
-| `open` | ω + tongue `M-4.5 11.5 Q0 19 4.5 11.5` filled `#E69A9C`, stroke 2 |
+| `open` | ω + tongue `M-4.5 11.5 Q0 19 4.5 11.5` filled `#DF9BB4`, stroke 2 |
 | `line` | `M-5 10 Q0 13 5 10` — sleepy |
 | `o` | filled ellipse (0,12) rx 3.2 ry 3.8 |
 
@@ -128,34 +128,29 @@ Swap ears, tail and markings; keep head, body, face and pose.
 |---|---|---|---|
 | cat | `point` above (puffy, stroke 10); inner `M20 -38 C24 -49 31 -54 37 -52 C43 -50 44 -41 42 -31 Z` | curl | whiskers |
 | rabbit | `M8 -32 C0 -64 8 -92 26 -94 C44 -96 48 -66 38 -28 Z` with a 6-wide round-joined stroke (fat, round-topped), inner `M17 -40 C12 -62 17 -82 27 -83 C37 -84 39 -62 32 -40 Z` | puff: circle (0,80) r 9, light | no whiskers |
-| bear | circle (36,-48) r 16, inner r 9 at (36,-41) in MID | nub (none) | muzzle: MID ellipse (0,12) rx 18 ry 12 in belly colour + ink nose ellipse (0,4.5) rx 3.6 ry 2.4 `#3A2C2E`; no whiskers |
+| bear | circle (36,-48) r 16, inner r 9 at (36,-41) in MID | nub (none) | muzzle: MID ellipse (0,12) rx 18 ry 12 in belly colour + ink nose ellipse (0,4.5) rx 3.6 ry 2.4 `#735B83`; no whiskers |
 | puppy | floppy `M28 -38 C52 -44 70 -26 68 2 C66 22 52 26 44 16 C38 2 42 -18 24 -26 Z` in SHADE, drawn **after** the head in SOFT | curl | the same ink nose; no whiskers |
 
 For any other animal, add its ear, horn or tail shape to SOFT and its marking to MID; the blur forgives rough shapes. Keep the marshmallow rule: fatten thin parts, round every tip (a round-joined stroke of 6–10 in the fill colour puffs any shape).
 
-## Colour — dopamine candy
+## Colour — star-pink pastels
 
-Bright, clean, happy colours: pure hues mixed **with white**, never with grey, black or brown. Think candy-shop pink, soda blue, lemon, lime, grape, mint. Saturation can be high; what must stay out is mud.
-
-- **Lightness:** most areas sit high (light pastel to bright mid). Use one deeper fur (`berry`) at most per card for weight.
-- **Shades stay in hue:** a pink shades to a deeper hot pink, a blue to a deeper aqua — never toward grey or brown. Same for shadows.
-- **Avoid:** greyish mid-tones, beige, khaki, olive, brown, dusty "vintage" tones, pure black. Ink is `#2E2628`.
-- **Grain is white**, never grey: grey grain dulls everything.
+Use petal pink `#F6C9DD`, sky blue `#C7E8FB` and star yellow `#FFEAAB` for readable patches of colour on a pale ground. Draw faces in grape ink `#695580`. Keep shadows close to the local hue and save the strongest pink for a small accent such as a strawberry.
 
 | Fur | light / base / shade | belly | inner ear |
 |---|---|---|---|
-| strawberry | `#FFD9E8 / #FFB0D0 / #F786B6` | `#FFF2F8` | `#FF7FAE` |
-| soda | `#D6F6FF / #A6E6FA / #72CDEF` | `#F2FCFF` | `#FF9EC4` |
-| lemon | `#FFF9CC / #FFEC85 / #FAD54F` | `#FFFDEB` | `#FFA3BC` |
-| lime | `#F1FBC2 / #DCF285 / #BCE152` | `#FBFFE8` | `#FF9EC0` |
-| grape | `#EEE2FF / #D4BDFC / #B394F4` | `#F9F4FF` | `#FF9ED0` |
-| mint | `#D8FBEE / #A8F0D6 / #74DDBB` | `#F2FFFA` | `#FF9EB8` |
-| peach | `#FFE6D2 / #FFC8A0 / #FFA577` | `#FFF6EE` | `#FF8F9A` |
-| caramel | `#FFE2C0 / #FFC98E / #F5A862` | `#FFF6E8` | `#FF9494` |
-| milk | `#FFFFFF / #FFF9F4 / #FBDDEB` | `#FFFFFF` | `#FFAACB` |
-| berry (deep) | `#B8A6EC / #9480DA / #7461C2` | `#E9E1FF` | `#FFA5D2` |
+| strawberry | `#FFEBF3 / #F6C9DD / #E7AFCB` | `#FFF6F8` | `#EFAECA` |
+| soda | `#EAF6FF / #C7E8FB / #A8CEE8` | `#F6FBFF` | `#F3C5D9` |
+| lemon | `#FFF6D6 / #FFEAAB / #EDCB87` | `#FFFAE8` | `#F6C9DD` |
+| lime | `#EFF6DE / #D7E9C3 / #BAD6A8` | `#FAFFF0` | `#F6C9DD` |
+| grape | `#F4EDF9 / #E2CCE9 / #C8B2DA` | `#FBF3FA` | `#F3C5D9` |
+| mint | `#ECFAF4 / #C7E6DF / #A5D3C9` | `#F7FFFA` | `#F6C9DD` |
+| peach | `#FFF0E1 / #FAD5BB / #EDBA9D` | `#FFF7EF` | `#F3BBCB` |
+| caramel | `#FFF4CF / #FFEAAB / #EBCB8E` | `#FFF7DD` | `#F2C2CF` |
+| milk | `#FFFFFF / #FFFBF3 / #E5D9E4` | `#FFFFFF` | `#F6C9DD` |
+| berry (deep) | `#E7E3F6 / #CBC2E6 / #A999C8` | `#F4EFFA` | `#F3C6DD` |
 
-Toe beans `#FF7FAA`, blush `#FF8FB8`, stars `#FFF7B8` / `#FFFFFF` / `#FFC4E2`, calico patch `#FFB36B`.
+Toe beans `#DDA1BE`, blush `#F2B0C7`, stars `#FFF1BE` / `#FFFFFF` / `#FBDCEB`, calico markings in ginger `#EBA264` and charcoal brown `#524541` on cream-white fur.
 
 **Separate by hue and value.** The blur cannot add contrast. Put an animal on a ground of a different hue family (pink cat on aqua water, milk cat on lime grass, berry cat on a pink bed), never pink-on-pink or lime-on-lime. Neighbouring animals should differ in hue so their fuzzy edges don't merge into one blob.
 
@@ -165,13 +160,13 @@ The card **is** the surface — no horizon, no perspective. Fill it with a gradi
 
 | Scene | Ground | Soft things | Hard things |
 |---|---|---|---|
-| Water | radial `#BDF3F8 → #8FE3F1 → #63CFE7` | lime lily pads `#C6EE6A`, white light patches, a pink floating flower | reflected stars, twinkles |
-| Grass | radial `#EEFCAE → #D6F27A → #BCE357` | three-heart clovers `#A8D944` | white / pink / lilac five-petal flowers with yellow centres, pale grass flicks `q2 -7 5 -10` (stroke 2.4) |
-| Bed | pink sheet `#FFE3F0 → #FFD0E5` | white pillow (big rounded rect), lemon star cushion | a rainbow-striped quilt (pink, lemon, mint, soda, lavender) with a curved hem and white dots |
+| Water | radial `#EFF9FC → #C7E8FB → #AFD8ED` | lime lily pads `#C0DDAF`, white light patches, a pink floating flower | reflected stars, twinkles |
+| Grass | radial `#FFFFF7 → #E7F3E2 → #C7E6E8` | three-heart clovers `#C0DDAF` | white / pink / lilac five-petal flowers with yellow centres, pale grass flicks `q2 -7 5 -10` (stroke 2.4) |
+| Bed | pink sheet `#FFF4F8 → #FBDCEB` | white pillow (big rounded rect), lemon star cushion | a rainbow-striped quilt (pink, lemon, mint, soda, lavender) with a curved hem and white dots |
 
 Others work the same way: a picnic blanket, a cloud, a pile of laundry, a tatami mat, a bath with bubbles.
 
-Under each animal put either a **haze shadow** (`<ellipse cx="2" cy="40" rx="62" ry="60" fill=DEEP-GROUND opacity=".35" filter="url(#xx-haze)"/>`) or, on water, **ripple rings** (white stroked ellipses rx 80 ry 76 at (0,34) in MID, stroke 2.8, opacity .75) plus the same tinted haze. Shadows are a deeper, more saturated version of the ground (aqua `#3DB4D8`, lime `#86C232`, pink `#E46FAE`), never grey.
+Under each animal put either a **haze shadow** (`<ellipse cx="2" cy="40" rx="62" ry="60" fill=DEEP-GROUND opacity=".35" filter="url(#xx-haze)"/>`) or, on water, **ripple rings** (white stroked ellipses rx 80 ry 76 at (0,34) in MID, stroke 2.8, opacity .75) plus the same tinted haze. Shadows are a slightly deeper version of the ground (aqua `#A0C6DE`, lime `#A3C8CC`, pink `#D7ADCA`), never grey.
 
 **Hard vs soft on the ground.** A crisp ground pattern (quilt checks, flowers) makes the fuzzy animal read better; soft ground blobs (lily pads, clover) give depth. Use both.
 
@@ -180,8 +175,8 @@ Under each animal put either a **haze shadow** (`<ellipse cx="2" cy="40" rx="62"
 Mix hard edges and soft light. A **glowing star** is a soft circle behind a hard star:
 
 ```svg
-<circle cx="X" cy="Y" r="1.3R" fill="#FFF7B8" opacity=".85" filter="url(#xx-glow)"/>
-<path d="(10-point star, outer R, inner .45R)" fill="#FFF7B8" stroke="#FFF7B8" stroke-width=".35R" stroke-linejoin="round"/>
+<circle cx="X" cy="Y" r="1.3R" fill="#FFF1BE" opacity=".85" filter="url(#xx-glow)"/>
+<path d="(10-point star, outer R, inner .45R)" fill="#FFF1BE" stroke="#FFF1BE" stroke-width=".35R" stroke-linejoin="round"/>
 ```
 
 The thick round-joined stroke makes a plump marshmallow star without blurring it. Add bare stars (no glow) in white, butter or pink, and white four-point twinkles. Use 8–14 marks, sizes 4–13, in the open space around the animals; leave the faces clear.
@@ -203,6 +198,6 @@ One self-contained SVG, viewBox `0 0 480 360` (square sticker `0 0 360 360`), wi
 
 The full animal occupies about 160 × 160 × S including whiskers, ears and legs (rabbit ears add 45 on top). **Whisker tips and raised paws must not touch a neighbour's face.** Keep about 35% of the card as calm ground. No text, scripts, images or external links. Target under 40 KB.
 
-**Standalone chat:** copy the filters and frame above, or start from `references/template.svg` and edit colours, pose and scene. Check: faces sharp with thick lines and no eye highlights, body clearly tiny under the head, every silhouette fuzzy, beans visible, colours bright and clean (no greys or browns), limbs stubby and ears round-tipped, animals clearly separated from the ground, nothing important hidden behind a neighbour.
+**Standalone chat:** copy the filters and frame above, or start from `references/template.svg` and edit colours, pose and scene. Check: faces sharp with thick lines and no eye highlights, body clearly tiny under the head, every silhouette fuzzy, beans visible, colours clear against the pale ground, limbs stubby and ears round-tipped, animals clearly separated from the ground, nothing important hidden behind a neighbour.
 
 **With Node:** `scripts/marshmallow.mjs` builds animals (`animal(p, {x, y, s, rot, fur, ears, eyes, mouth, arms, tail, marks, hold, shadow})`), stars, flowers, clovers and lily pads; see `scripts/build-examples.mjs`. Render with `node scripts/render.mjs card.svg card.png` (Playwright or a local Chrome; filters need a real browser engine) and lint with `node scripts/lint.mjs card.svg --prefix xx-`. Use `references/craft.md` for a closer review.
